@@ -328,6 +328,7 @@ function theWinner(hs){
     image(ball, mouseX, mouseY);
     $("#inputSpace").show();
     $("#winnerB").show();
+    $("#top1").show();
     yourScore = hs; 
 }
 
