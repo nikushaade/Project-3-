@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<title>About</title> 
+		<link rel="stylesheet" type="text/css" href="style1.css" />
+	</head>
+	<a href="/" class = "navlink">Home</a>
+	<a href = "Hs" class = "navlink"> High Score</a>
+
+</head>
+
+<body>
+	<h1>Project Documentation</h1>
+</body>
+
+<div class = "textStyle">
+
+	<h2> Description and Intended experience </h2>
+
+	<p>For my final project I wanted to work with something that would be Football (soccer) related. Since the start of the class, I wanted to do one of the projects that would be related to sports, however, due to lack of interesting APIs and other reasons I never got to work with it. As a result, I decided to create a football related game that would include a goalie trying to catch different strikers/midfielders. When we went through different examples in class, I got inspired to do a game and I knew that P5 library and more specifically P5 Play and P5 Sound were very helpful when designing games. I had worked with D3 library in my previous project and I wanted to explore a different library. When some of my classmates were presenting their second projects, I got really intrigued by the possibilities of P5, so I decided to work with it. Since there is no static API that contains interesting information about football players, Professor Craig gave me the opportunity to not incorporate an API in my project. I wanted to make sure that users would have the opportunity to experience the basic concepts of a Football game, in a simulated game. The rules are very simple, you just have to hover your mouse over the strikers and stop them. It ties to a general concept of goalies trying to stop strikers from scoring. I wanted to re-create this reality into a simple, arcade style game that people would compete in. Competition comes in the face of top 10 highest scores. It is a throwback to classical arcade games where you compete against your friends to have the highest score. </p>
+
+	<h2>Motivation and process of creating it</h2>
+
+	<p>Since childhood I’ve been a huge football fan. Moreover, I loved playing video games ever since I got my first PlayStation. Ever since then, I had all different kinds of consoles, ranging from PlayStation to Xbox and PC. I loved playing sports games, shooters, strategy, racing and other genres as well. I also loved competing against my friends in games where you had to compete for highest score. I remember playing arcade games in gaming centers and competing against friends. After having enough knowledge to develop my own website, I decided that I wanted to do an arcade style game. As a result, I decided to merge my love for football with my love for games. The result is the “beast goalie” game, where with a simple mouse hover you can catch different strikers and midfielders and compete for highest score.</p>
+	<p> Process of creating it was pretty hard, but at the same time very informative and was generally a very interesting learning curve. This was the first time I was working with P5 library and I first needed to make myself familiar with the library itself and then with P5 play and P5 Sound. Thankfully, they have pretty detailed documentation on their website and multiple examples that help in creation of movements and obstacles. Understanding how to create “sprites” and later how to customize them was an interesting process. Figuring out the design and mechanics was pretty hard as well, however, after seeing some examples of arcade games I got a general idea. Professor Craig’s “space-flyer” game example was helpful in terms of understanding how to style my game on website (such as creating a canvas, rather than displaying it on the full screen) and in terms of some of the code. Generally, it was a time-consuming process with multiple errors and roadblocks, however, at the end of the day it was a great experience. </p>
+
+    <h2>Design</h2>
+    <p>For the design of the game, I wanted to create an arcade game feel, but also wanted to make sure that it was football related. First step was to choose a background that would resemble a game but would also focus on the aspects of football. As a result, I decided to ignore the actual images of stadiums and rather started searching for more game-like images. I finally found a suitable background image with a goal in the background, that resembles the main idea of the game really well – try to not let the strikers score. In terms of general background, through some user testing, it was recommended to use a darker background that would help people visualize the playground easier. As a result, I found a suitable background image that merged well with the canvas background. In terms of strikers and “sprites” I wanted to make sure to include the best players in football. Through Google searches, I found a suitable format of 128x128 for my pictures and decided to search for players in that size. Majority of the players were easy to find, however, for some of them I needed to do personal modifications. I also wanted to create some obstacles and added referees with red cards, the most relevant obstacle of a football game. The cursor is an image of goalkeeper gloves.</p> 
+    
+    <p>In terms of game dynamics, the rules are pretty simple – catch as many strikers as possible in a limited time. Each round is 10 seconds and after every level the speed of the strikers increases. Moreover, the game time decreases with one second after every level, thus making it even harder for users to gain high scores. Once the player finishes a game, an input box shows up, where the player can input his/her name. If the score is in Top 10, then the player is directly redirected to the high score page. In terms of sounds, I wanted to include arcade related sounds as well as football related sounds. There is an arcade like game song on the loop, which I took from an old football arcade game. On mouse over there is a coin collect sound taken from Mario and finally after you pass a level a goal celebration sound comes on. The sounds merged really well and contribute a lot to the experience. </p>
+
+
+	<h2>Major Challenges</h2>
+
+<p>One of the biggest challenges was understanding how to make game playable so that it is enjoyable for people and doesn’t seem like something impossible or boring. This required a lot user testing and seeing what game limit to establish, what speed to give to the strikers and how to make levels harder. Another challenge came with understanding how to loop the 28 players, instead of hard coding them. The documentation that p5 provided didn’t work for my code and I had to look for alternatives. Creating a “mouseover” function was also an issue at first, but with some assistance from Professor Craig, I managed to make it work. Craig’s “space-flyer” game helped me understand how to adjust for edges, so that the game is limited in certain boundaries. It really helped that P5 has a very extensive documentation page and explanation of every code. Understanding the right design was also an issue at some point, as I wanted to make it aesthetically pleasing, but also enjoyable to play. My final challenge came with saving and appending data, but as I found out later with help of Craig, it was a minor issue in the Cloud. </p>
+
+	<h2>Next Steps</h2>
+
+	<p>The game can be extended to further modifications and challenges. The level difficulty may change according to different variables such as mass, movement, more roadblocks etc. The fact that it is a game leaves a lot of room for improvement and for further modifications. It was a joy working with p5 and I am hoping to have an opportunity to work with it in the future. </p>
+
+	<h2>References and links for the project</h2>
+
+	I got a lot of help from Craig in terms of design and code. I also used his space-flyer game to look at general designs of the games on website and also to understand the checkedges function in the game. P5 library documentation and examples helped me a lot when creating sprites and obstacles and when deciding what weight/mass or speed to give them. 
+
+	
+
+	<a href="http://molleindustria.github.io/p5.play/ " class = "navlink">P5 examples</a>
+
+        <a href= "https://creative-coding.decontextualize.com/making-games-with-p5-play/" class = "navlink">P5 documentation</a>
+
+         <a href="https://p5js.org/examples/"" class = "link">P5 Website</a>
+
+         <a href=" http://molleindustria.github.io/p5.play/examples/index.html?fileName=collisions4.js#" class = "link">P5 Colliders Example</a>
+
+         <a href="https://github.com/craigprotzel/space-flyer"" class = "link">Space-flyer</a>
+
+    
+  </div>
+  
+

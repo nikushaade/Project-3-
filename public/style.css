@@ -1,0 +1,114 @@
+body{
+	padding: 7px;
+	margin: 10px auto;
+	font-family:  "Papyrus", fantasy;
+	color: white;
+	font-size: 20px;
+} 
+
+h1{
+	font-family: "Papyrus", fantasy;
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	display: block;
+}
+
+#winner{
+	font-family: "Papyrus", fantasy;
+}
+
+#instructions{
+	font-family: "Papyrus", fantasy;
+	width: 800px;
+	margin: 5px auto;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+#inputSpace{
+    font-family: "Papyrus", fantasy;
+	display: none;
+	position: absolute;
+	top: 60%;
+	left: 40%;
+}
+
+input{
+	width: 200px;
+	height: 40px;
+	font-size: 15px;
+	
+}
+
+#winnerB{
+    font-family: "Papyrus", fantasy;
+	text-align: center;
+	padding: 5px;
+	background-color: white;
+	color: black;
+}
+
+#restartB{
+	font-family: "Papyrus", fantasy;
+	text-align: center;
+	padding: 5px;
+	size: 80px;
+	margin:5px auto;
+	/*position: absolute;*/
+	top: 60%;
+	left: 40%;
+	background-color: white;
+	color: black;
+}
+
+#winnerdinner{
+	font-size: 25px;
+	font-family: "Papyrus", fantasy;
+	display: none;
+	width: 1400px;
+	margin: 20px auto;
+	text-align:center;
+}
+
+canvas{
+	display: block;
+	margin: 0 auto;
+	color: black;
+}
+
+img{
+	display:block;
+	margin:10px auto;
+
+}
+
+#bround{
+	background: url("assets/keepa.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#bencho{
+	background: url("assets/bencho.jpg");
+	background-size: cover;
+
+}
+
+#navLink{
+	color: white;
+
+}
+
+#Hs-Input{
+	padding:20px;
+	margin: 15px auto;
+	font-family: "Papyrus", fantasy;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 39px;
+}
+
+
