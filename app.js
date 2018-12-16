@@ -21,10 +21,10 @@ app.use(bodyParser.json());
 /*---------------
 //DATABASE CONFIG
 ----------------*/
-var cloudant_USER = '59593353-c7b3-43ef-9789-b560842a067d-bluemix';
-var cloudant_DB = 'nik';
-var cloudant_KEY = 'swevereethunfleffirsunto';
-var cloudant_PASSWORD = 'a7e712fee5310929558ddbe6228d742298d41092';
+var cloudant_USER = '';
+var cloudant_DB = '';
+var cloudant_KEY = '';
+var cloudant_PASSWORD = '';
 
 var cloudant_URL = "https://" + cloudant_USER + ".cloudant.com/" + cloudant_DB;
 
