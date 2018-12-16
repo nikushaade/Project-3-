@@ -39,10 +39,10 @@ var text3 = "Fact:Neymar is the most expensive player at $222 million ";
 var text4 = "Fact:Aguero was the youngest player to debut in Argentine league at the age of 15";
 var text5 = "Fact:Griezman's celebrations are based on popular video game Fortnite";
 var text6 = "Fact:Mbappe is still a teenager";
-var text7 = "Fact:Pepe was once baned for three games for repeatedly kicking an opponent on the ground";
-var text8 = "Fact:At some point Samuel Eto was the highest paid football player, while playing in Chechnya";
-var text9 = "Mo Salah is is nicknamed The Egyptian king by the Liverpool ";
-var text10 = "Aguero is nicknamed Kun, because of his childhood cartoon";
+var text7 = "Fact:Pepe was once baned for three games for repeatedly kicking an opponent";
+var text8 = "Fact:At some point Samuel Eto was the highest paid football player";
+var text9 = "Fact:Mo Salah is is nicknamed The Egyptian king by the Liverpool ";
+var text10 = "Fact:Aguero is nicknamed Kun, because of his childhood cartoon";
 var text11 = "Fact: Lionel Messi has the most goals in a calendar year with 92 goals";
 
 var textlist = [text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11];
@@ -170,20 +170,21 @@ function createLevel(outcome){
 	
     if (outcome == "newLevel"){
         passLevel.play();
+        timeRunningOut.play();
         console.log("Win");
         gameLimit = gameLimit - 1; 
         strikerSpeed = strikerSpeed + 2.1;
         levels = levels + 1; 
     }
-    else{
+    else {
         //Restart 
         levels = 1;
         point = 0;
         gameLimit = 10;
         strikerSpeed = 4;
+        timeRunningOut.play();
     }
     mouseOver1.play();
-    timeRunningOut.play();
     win = 1; 
     time = 0;
     gameTime = 10;
@@ -218,11 +219,11 @@ function draw(){
 
 // Indicating current progress of the game 
 function currentprog(){ 
-       textSize(25);
+       textSize(30);
        textFont("Papyrus");
-       fill(255, 0, 120);
+       fill(255, 0, 0);
        text("Current Level:" +   levels ,  width/2, height/10);
-       text("Strikers stopped:" +   point ,  width-120, height-450); 
+       text("Strikers stopped:" +   point ,  width-140, height-450); 
 }
 
 
@@ -239,7 +240,7 @@ function potentialwinner(){
         currentprog();
         // footyfacts();
         textSize(32);
-    	fill(255, 255, 255);
+    	fill(255);
     	text(textlist[levels], width/2, height/1.5); 
     }
 
@@ -275,8 +276,6 @@ function potentialwinner(){
             timeRunningOut.stop(); 
             win = win + 1;
             time = 0;
-
-
 
             createLevel("newLevel");
              
@@ -327,9 +326,10 @@ function checkEdges(attacker){ //used Craigs space-flyer game for referance
 // }
 
 //the string for the winner name to show up / after game dynamics
+$("#top1").hide();
 function theWinner(hs){
-    textSize(30);
-    fill(255, 0, 120);
+    textSize(35);
+    fill(255, 0, 0);
     textAlign(CENTER);
     text("Time is up and the strikers have scored! Find out if you rank in top 10", width/2, height/4);
     image(ball, mouseX, mouseY);
@@ -357,7 +357,7 @@ $("#winnerB").click(function(){
          window.location.href = "/Hs";
     }
     else if (yourScore < lowScore) {
-        var loseString = " Apologies " + playerName  + " your score of " + yourScore +  "  is not good enough for Top 10. ";
+        var loseString = "  Apologies  " + playerName  + " your score of    " + yourScore +  "  is not good enough for Top 10.  ";
         $('#winnerdinner').html(loseString);
     }
 });
@@ -368,8 +368,9 @@ $("#restartB").click(function(){
     $("#instructions").show();
     $("#winnerdinner").hide();
     $("#inputSpace").hide();
+    $("#top1").hide();
 });
-
+$("top1").hide();
 
 function saveData(obj){ //taken from Craig's main.js folder from cloudant example
     $.ajax({
