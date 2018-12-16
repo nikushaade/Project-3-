@@ -33,7 +33,6 @@ var playerlist = [];
 var refereeList = [];
 
 //create texts/facts that will shouw up after every level
-var text0 = "Fact: Lionel Messi has the most goals in a calendar year with 92 goals";
 var text1 = "Fact:Cristiano Ronaldo is the leading goalscorer of UCL with 121 goals";
 var text2 = "Fact:Luis Suarez has bit three different players in his career";
 var text3 = "Fact:Neymar is the most expensive player at $222 million ";
@@ -42,6 +41,11 @@ var text5 = "Fact:Griezman's celebrations are based on popular video game Fortni
 var text6 = "Fact:Mbappe is still a teenager";
 var text7 = "Fact:Pepe was once baned for three games for repeatedly kicking an opponent on the ground";
 var text8 = "Fact:At some point Samuel Eto was the highest paid football player, while playing in Chechnya";
+var text9 = "Mo Salah is is nicknamed The Egyptian king by the Liverpool ";
+var text10 = "Aguero is nicknamed Kun, because of his childhood cartoon";
+var text11 = "Fact: Lionel Messi has the most goals in a calendar year with 92 goals";
+
+var textlist = [text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11];
 
 //Creating the playground and the goalie 
 var bg4;
@@ -233,7 +237,10 @@ function potentialwinner(){
         theWinner(point);
         timeRunningOut.stop();
         currentprog();
-        footyfacts();
+        // footyfacts();
+        textSize(32);
+    	fill(255, 255, 255);
+    	text(textlist[levels], width/2, height/1.5); 
     }
 
     else {
@@ -313,11 +320,11 @@ function checkEdges(attacker){ //used Craigs space-flyer game for referance
     }
 }
 
-function footyfacts(){
-    textSize(32);
-    fill(255, 255, 255);
-    text(text0, width/2, height/1.5); 
-}
+// function footyfacts(){
+//     textSize(32);
+//     fill(255, 255, 255);
+//     text(text+levels, width/2, height/1.5); 
+// }
 
 //the string for the winner name to show up / after game dynamics
 function theWinner(hs){
