@@ -32,6 +32,13 @@ var cloudant_URL = "https://" + cloudant_USER + ".cloudant.com/" + cloudant_DB;
 ROUTES
 -----*/
 
+//ADD CORS TO ALL ROUTES
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 //Main Page Route - Show ALL data VIEW
 app.get("/", function(req, res){
 	res.render('index', {page: 'get all data'});
